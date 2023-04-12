@@ -16,15 +16,23 @@
         <form action="#">
            <div class="bmi-form">
             <label>Weight (Kg)</label> <br>
-            <input type="number" id="weight" placeholder="Input Your Weight Here...">
+            <input type="number" id="weight" placeholder="Input Your Weight Here..." required>
            </div>
            <div class="bmi-form">
             <label>Height (Cm)</label> <br>
-            <input type="number" id="height"  placeholder="Input Your Height Here...">
+            <input type="number" id="height"  placeholder="Input Your Height Here..." required>
            </div>
         </form>
-           <button onclick="bmi_calculator()">Calculate!</button>
-
+           <button onclick="bmi_calculator()" type="button">Calculate!</button>
+        <div class="category">
+        <h4>BMI Categories</h4> 
+        <ul>
+            <li>18.5 or lower = Underweight</li>
+            <li>18.5 - 24.9 = Normal Weight</li>
+            <li>25 - 29.9 = Overweight</li>
+            <li>30 or bigger  = Obesity</li>
+        </ul>
+         </div>
         <div id="output"></div>
 
         <div class="watermark">
