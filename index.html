@@ -16,18 +16,23 @@
         <form action="#">
            <div class="bmi-form">
             <label>Weight (Kg)</label> <br>
-            <input type="number" name="height" id="Weight" placeholder="Input Your Weight Here...">
+            <input type="number" id="weight" placeholder="Input Your Weight Here...">
            </div>
            <div class="bmi-form">
             <label>Height (Kg)</label> <br>
-            <input type="number" name="height" id="Weight" placeholder="Input Your Height Here...">
+            <input type="number" id="height"  placeholder="Input Your Height Here...">
            </div>
-           <button>Calculate!</button>
         </form>
-    <div class="watermark">
+           <button onclick="bmi_calculator()">Calculate!</button>
+
+        <div id="output"></div>
+
+        <div class="watermark">
         <p>KhathirulSan &copy; 2023 TPA-2 BMI Calculator</p>
-    </div>
+        </div>
 
     </div>
+    <script src="script.js"></script>
+
 </body>
 </html>
