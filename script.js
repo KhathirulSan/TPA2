@@ -1,6 +1,10 @@
 function bmi_check_number(number) {
-    return number == 0 ? false : true;
-  }
+    if(number < 0 || number == 0){
+        return false
+    }else {
+        return true
+    }
+}
   
   function bmi_calculator() {
     const weight = document.getElementById("weight").value;
